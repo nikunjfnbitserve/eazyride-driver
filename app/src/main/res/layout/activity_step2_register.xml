@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context=".Step2Register">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/step2_mail_et"
+            android:text="Vehicle Details"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/colorWidget"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/step2_brand_et"
+            android:hint="Brand"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/editbackground"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/step2_vnumber_et"
+            android:hint="Vehicle number"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/editbackground"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/step2_model_et"
+            android:hint="Model"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/editbackground"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/step2_year_et"
+            android:hint="Year"
+            android:inputType="number"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/editbackground"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/step2_color_et"
+            android:hint="Color"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/editbackground"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Documents"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*(choose image with less than 1 Mb)"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:textSize="16sp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:text="Upload bike photo"
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+
+            <Button
+                android:id="@+id/step2_bikephoto_btn"
+                android:text="Choose"
+                android:textAllCaps="false"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/step2_bikephoto_tv"
+                android:text="Image Name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:text="Upload passport size photo"
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+
+            <Button
+                android:id="@+id/step2_pass_btn"
+                android:text="Choose"
+                android:textAllCaps="false"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/step2_pass_tv"
+                android:text="Image Name"
+
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <TextView
+                android:text="Driver's License (Back)"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+            <Button
+                android:id="@+id/step2_dlback_btn"
+                android:text="Choose"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/step2_dlback_tv"
+                android:text="Image Name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:text="Driver's License (front)"
+                android:padding="4dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/step2_dlfront_btn"
+                android:text="Choose"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/step2_dlfront_tv"
+                android:text="Image Name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:text="Motor Insurance Certificate "
+                android:padding="4dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/step2_motorInsurance_btn"
+                android:text="Choose"
+                android:textAllCaps="false"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/step2_motorInsurance_tv"
+                android:text="Image Name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:text="Certificate of registration"
+                android:padding="4dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/step2_certoreg_btn"
+                android:text="Choose"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/step2_certoreg_tv"
+                android:text="Image Name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/step2_sub_btn"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:background="@color/colorWidget"
+            android:layout_marginTop="14dp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>

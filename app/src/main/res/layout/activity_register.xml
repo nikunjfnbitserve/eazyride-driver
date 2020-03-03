@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:layout_gravity="center"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/colorLayout"
+            android:background="@drawable/background_et"
+            android:layout_height="wrap_content" >
+            <LinearLayout
+                android:layout_width="310dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:text="Register"
+                    android:textStyle="bold"
+                    android:padding="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:textSize="22sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <EditText
+                    android:id="@+id/reg_mail_et"
+                    android:hint="Email Id"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/editbackground"
+                    android:padding="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+
+                    android:id="@+id/reg_name_et"
+                    android:background="@drawable/editbackground"
+                    android:hint="Full Name"
+                    android:padding="14dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/reg_ph_et"
+                    android:hint="Phone Number"
+                    android:background="@drawable/editbackground"
+                    android:inputType="phone"
+                    android:padding="14dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/reg_emergencycontact_et"
+                    android:hint="Emergency contact "
+                    android:inputType="phone"
+                    android:background="@drawable/editbackground"
+                    android:padding="14dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/reg_pass_et"
+                    android:background="@drawable/editbackground"
+                    android:hint="Create Password"
+                    android:inputType="textPassword"
+                    android:padding="14dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/reg_address_et"
+                    android:hint="Address"
+                    android:background="@drawable/editbackground"
+                    android:padding="14dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/reg_city_et"
+                    android:hint="city"
+                    android:background="@drawable/editbackground"
+                    android:padding="14dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+                <EditText
+                    android:id="@+id/reg_state_et"
+                    android:hint="State"
+                    android:background="@drawable/editbackground"
+                    android:padding="14dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+
+                <CheckBox
+                    android:id="@+id/reg_privacy_chk"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="I read  and agree Privacy Policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/reg_register_btn"
+                    android:text="REGISTER"
+
+                    android:textColor="#ffffff"
+                    android:background="@color/colorWidget"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</ScrollView>

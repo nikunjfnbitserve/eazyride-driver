@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.eziride.driverRide.Skip">
+
+
+    <TextView
+
+        android:text="Your Information is under Verification "
+        android:textColor="#0D2E8B"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_marginTop="30dp"
+        android:text="SKIP"
+        android:padding="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+</LinearLayout>
